@@ -1,16 +1,18 @@
 // IMPORT MODULES under test here:
-// import { add } from '../calc.js';
+import { score } from '../game.js';
 
 const test = QUnit.test;
 
-test('time to test a function', (expect) => {
+test('player rock, computer rock is tie', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = true;
+    const player = 'rock';
+    const computer = 'rock';
+    const expected = 'tie';
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = true;
+    const actual = score(player, computer);
 
     //Expect
     // Make assertions about what is expected versus the actual result
