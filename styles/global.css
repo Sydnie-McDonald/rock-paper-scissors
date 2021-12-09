@@ -7,6 +7,7 @@
     --text-color: #32363F;
     --accent-light: #ED8F11;
     --accent-dark: #C27A18;
+    --magenta:#EC8FD0;
     
     --gutter: 30px;
 }
@@ -36,7 +37,10 @@ header {
 main {
     overflow-y: auto;
 }
-
+img {
+    width: 64px;
+    height:64px;
+  }
 
 footer {
     background-color: var(--chrome-background-opaque);
