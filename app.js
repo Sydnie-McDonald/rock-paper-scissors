@@ -1,5 +1,5 @@
 // import functions
-
+import { score, generateThrows } from '../game.js'; 
 // grab DOM elements
 
 // set event listeners
