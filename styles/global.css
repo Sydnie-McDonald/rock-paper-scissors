@@ -14,18 +14,15 @@
 
 body {
     /* style */
-    font-family: 'Titillium Web', sans-serif;
-    background-color: var(--primary-background);
+    background: var(--orchid);
+    font-family: 'Montserrat', sans-serif;
     color: var(--text-color);
-
+  
     /* layout */
     display: grid;
-    grid-template-rows: 80px 1fr auto;
-
-}
-
-
-
+    grid-template-rows: auto 1fr auto;
+  }
+  
 header {
     display: flex;
     justify-content: flex-start;
@@ -37,9 +34,11 @@ header {
 main {
     overflow-y: auto;
 }
+
 img {
     width: 64px;
     height:64px;
+
   }
 
 footer {
