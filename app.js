@@ -4,17 +4,22 @@ import { score, generateThrows } from '../game.js';
 
 // set event listeners
 // get user input
-const playerInput = document.getElementById('button');
-const mainDisplay = document.getElementById('main');
+const buttons = document.querySelectorAll('.throw-button');
+const selectionDisplay = document.getElementById('selection-display');
 // use user input to update state
-playerInput.addEventListener('input', () => {
-    mainDisplay.textContent = playerInput.value;
-}
-    // update DOM to reflect the new state
-    mainDisplay.addEventListener('change', () => {
-    playerChoice = playerInput.value;
-}
+for (let button of buttons) {
+    button.addEventListener('click', () => {
+        selectionDisplay.textContent = button.value;
+        const player = button.value;
+        const computer = generateThrows();
+        // update DOM to reflect the new state
+        const result = score(player, computer);
+        console.log(player, computer, result);
 
+        selectionDisplay.textContent = result;
+
+    });
+}
 //images and audio
 const audio = document.getElementById('audio');
 
