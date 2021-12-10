@@ -22,7 +22,7 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
   }
-  
+
 header {
     display: flex;
     justify-content: flex-start;
@@ -32,8 +32,12 @@ header {
 }
 
 main {
-    overflow-y: auto;
-}
+    padding: var(--padding);
+
+  }
+  div{
+      padding: 50px;
+  }
 
 img {
     width: 64px;
